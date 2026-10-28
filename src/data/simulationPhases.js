@@ -1,0 +1,136 @@
+// Cinematic Simulation Sequence Phases with immediate camera zoom-in and active component highlights
+
+export const SIMULATION_PHASES = [
+  {
+    phaseIndex: 1,
+    id: "engine_combustion",
+    title: "PHASE 01 — 3-CYLINDER ENGINE COMBUSTION",
+    subtitle: "Reciprocating Pistons C1, C2, C3 & Firing Order",
+    narration:
+      "Inside the 3-cylinder heavy-duty diesel engine cutaway, pistons C1, C2, and C3 reciprocate continuously in 120° phase offset. Intense fuel combustion flashes at Top Dead Center (TDC), generating high-pressure thermal exhaust (650°C).",
+    highlightComponent: "engine",
+    cameraPos: [18, 4.2, 9.0],
+    cameraTarget: [15.5, 0, 0],
+    duration: 6.5,
+  },
+  {
+    phaseIndex: 2,
+    id: "exhaust_pipe",
+    title: "PHASE 02 — MAIN EXHAUST TRANSPORT DUCT",
+    subtitle: "High-Temperature Gas Flow Generation",
+    narration:
+      "Generated exhaust gas exits the engine combustion chambers and flows continuously into the stainless steel exhaust pipe toward the expansion muffler chamber.",
+    highlightComponent: "exhaustPipe",
+    cameraPos: [14.0, 3.2, 8.0],
+    cameraTarget: [11.25, 0, 0],
+    duration: 5.5,
+  },
+  {
+    phaseIndex: 3,
+    id: "muffler",
+    title: "PHASE 03 — EXHAUST / MUFFLER CHAMBER",
+    subtitle: "Pressure Stabilization Plenum",
+    narration:
+      "Exhaust enters the large oval muffler chamber. Pulsating combustion pressure bursts expand into a smooth, continuous high-pressure plenum.",
+    highlightComponent: "mufflerChamber",
+    cameraPos: [11.0, 3.2, 8.0],
+    cameraTarget: [7.25, 0, 0],
+    duration: 6.0,
+  },
+  {
+    phaseIndex: 4,
+    id: "nozzle",
+    title: "PHASE 04 — HIGH-VELOCITY CONVERGENT NOZZLE",
+    subtitle: "Bernoulli Fluid Acceleration",
+    narration:
+      "The restricted nozzle passage contracts flow cross-section, accelerating exhaust stream to high kinetic velocity (>145 m/s) aimed directly at Turbine Stage T1.",
+    highlightComponent: "nozzle",
+    cameraPos: [8.0, 2.8, 7.0],
+    cameraTarget: [4.3, 0, 0],
+    duration: 6.0,
+  },
+  {
+    phaseIndex: 5,
+    id: "turbine_series",
+    title: "PHASE 05 — 12 SEPARATE TURBINES IN SERIES (T1 - T12)",
+    subtitle: "Multi-Stage Kinetic Energy Conversion",
+    narration:
+      "High-velocity exhaust passes through ALL 12 SEPARATE TURBINE WHEELS mounted in series along the shaft. Each turbine extracts stage kinetic energy, spinning the common shaft synchronously.",
+    highlightComponent: "turbine",
+    cameraPos: [4.0, 2.8, 8.0],
+    cameraTarget: [-0.25, 0, 0],
+    duration: 7.5,
+  },
+  {
+    phaseIndex: 6,
+    id: "shaft",
+    title: "PHASE 06 — COMMON ROTATIONAL SHAFT",
+    subtitle: "1:1 Mechanical Synchronous Torque Transmission",
+    narration:
+      "The alloy central shaft locks all 12 turbine rotors and generator rotor together, transmitting total rotational torque directly into Electrical Generator G.",
+    highlightComponent: "shaft",
+    cameraPos: [1.5, 2.8, 7.0],
+    cameraTarget: [-2.5, 0, 0],
+    duration: 5.5,
+  },
+  {
+    phaseIndex: 7,
+    id: "generator",
+    title: "PHASE 07 — ELECTRICAL GENERATOR G CONVERSION",
+    subtitle: "Electromechanical Power Induction",
+    narration:
+      "At the end of the common shaft, the spinning rotor with copper armature coils cuts magnetic stator field lines, inducing clean electrical current. Blue flux arcs visualize live power generation.",
+    highlightComponent: "generator",
+    cameraPos: [-4.5, 2.8, 7.0],
+    cameraTarget: [-8.5, 0, 0],
+    duration: 6.5,
+  },
+  {
+    phaseIndex: 8,
+    id: "battery_charging",
+    title: "PHASE 08 — BATTERY PACK CHARGING",
+    subtitle: "Power Electronics & Live Energy Storage",
+    narration:
+      "Power electronics condition current into the Lithium-Ion vehicle battery pack. Live charging increases battery State of Charge (% SOC), reducing alternator engine drag.",
+    highlightComponent: "batteryPack",
+    cameraPos: [0.0, 0.2, 7.0],
+    cameraTarget: [-3.5, -3.5, 2.5],
+    duration: 6.5,
+  },
+  {
+    phaseIndex: 9,
+    id: "bypass_control",
+    title: "PHASE 09 — INTERACTIVE BYPASS VALVE CONTROL",
+    subtitle: "Overpressure Protection Modulation",
+    narration:
+      "Bypass valve opens to safely modulate flow during high engine backpressure spikes, diverting exhaust gas around turbine stages directly to the exit duct.",
+    highlightComponent: "bypassValve",
+    cameraPos: [3.0, 0.2, 7.0],
+    cameraTarget: [-0.25, -2.6, 0],
+    duration: 6.0,
+  },
+  {
+    phaseIndex: 10,
+    id: "exit_path",
+    title: "PHASE 10 — SLANTED DEFLECTOR & EXIT OUTLET",
+    subtitle: "Atmospheric Exhaust Discharge",
+    narration:
+      "Post-turbine exhaust encounters the slanted metal deflector sheet, changing flow direction upward into the top exit tailpipe to discharge into atmosphere.",
+    highlightComponent: "deflector",
+    cameraPos: [0.0, 3.5, 7.0],
+    cameraTarget: [-4.0, 1.0, 0],
+    duration: 6.0,
+  },
+  {
+    phaseIndex: 11,
+    id: "summary",
+    title: "PHASE 11 — COMPLETE ENERGY RECOVERY LOOP",
+    subtitle: "SIMULATION COMPLETE — Full Energy Cycle Active",
+    narration:
+      "Combustion (C1-C3) → Muffler → Nozzle → 12 Series Turbines (T1-T12) → Common Shaft → Generator G → Battery Storage. Interactive inspection mode is unlocked!",
+    highlightComponent: null,
+    cameraPos: [18, 10, 24],
+    cameraTarget: [1.5, 0, 0],
+    duration: 7.0,
+  },
+];
