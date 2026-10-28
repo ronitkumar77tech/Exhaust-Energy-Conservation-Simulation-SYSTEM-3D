@@ -4,6 +4,6 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/Exhaust--Energy-Recovery-SYSTEM-3D/',
+  base: '/',
   plugins: [react(), tailwindcss()],
 })
